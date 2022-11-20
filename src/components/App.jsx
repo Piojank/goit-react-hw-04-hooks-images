@@ -3,10 +3,10 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Searchbar from './Searchbar/Searchbar';
 import ImageGallery from './ImageGallery/ImageGallery';
-import Modal from './ImageGallery/Modal/Modal';
+import Modal from './Modal/Modal';
 import Button from './Button/Button';
 import Loader from './Loader/Loader';
-import { fetchImages } from 'components/services/fetchImages';
+import { fetchImages } from '../utils/pixabayAPI.js';
 
 export const App = () => {
     const [searchRequest, setSearchRequest] = useState('');
